@@ -16,8 +16,6 @@ namespace RandomTest
             
             for (int i = 0; i < 4; i++)
                 Console.WriteLine(r2.Next());
-
-           
         }
     }
 }
