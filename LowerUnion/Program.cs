@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 
 namespace LowerUnion
@@ -9,21 +7,15 @@ namespace LowerUnion
     {
         static void Main(string[] args)
         {
-            
-            List<String> strs = new List<string>();
-            args.ToList().ForEach(s => strs.Add(s.ToLower()));
-            strs.Sort();
-
+            Array.Sort(args);
             StringBuilder finalString = new StringBuilder();
-            for (int i = 0; i < strs.Count; i++)
+            for (int i = 0; i < args.Length; i++)
             {
-                finalString.Append(strs[i]);
-                if (i != strs.Count -1)
+                finalString.Append(args[i].ToLower());
+                if (i != args.Length -1)
                     finalString.Append("_");
             }
-
             Console.WriteLine(finalString);
-
         }
     }
 }
