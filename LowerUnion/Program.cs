@@ -13,7 +13,6 @@ namespace LowerUnion
             List<String> strs = new List<string>();
             args.ToList().ForEach(s => strs.Add(s.ToLower()));
             strs.Sort();
-            strs.ForEach(str => Console.Write(str + " "));
 
             StringBuilder finalString = new StringBuilder();
             for (int i = 0; i < strs.Count; i++)
