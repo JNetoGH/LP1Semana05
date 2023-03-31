@@ -18,9 +18,8 @@ namespace LowerUnion
             for (int i = 0; i < strs.Count; i++)
             {
                 finalString.Append(strs[i]);
-                if (i == strs.Count -1)
-                    continue;
-                finalString.Append("_");
+                if (i != strs.Count -1)
+                    finalString.Append("_");
             }
 
             Console.WriteLine(finalString);
